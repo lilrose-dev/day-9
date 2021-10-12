@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,700;1,400&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -355,11 +356,11 @@ body {
 }
 
 .container {
-  max-width: px;
+  max-width: 930px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: px;
-  padding-right: px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .visually-hidden {
@@ -373,13 +374,140 @@ body {
   clip: rect(0 0 0 0);
 }
 
-img {
-  width: 100%;
-  height: auto;
-}
-
-ul, div {
+ul {
   margin: 0;
   padding: 0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+}
+
+.header__logo {
+  display: block;
+  margin-left: 20px;
+}
+
+.header__line {
+  margin: 0;
+  padding: 0;
+  width: 1px;
+  height: 70px;
+  background-color: #808080;
+  margin-right: 17px;
+  margin-left: 17px;
+}
+
+.header__ending-line {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 17px;
+}
+
+.header__input {
+  position: relative;
+  max-width: 150px;
+  border-radius: 19px;
+  padding: 5px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #808080;
+  background-image: url(../../img/magnifying-glass.png);
+  background-size: 19px 19px;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-right: 8px;
+}
+
+.header .navs {
+  list-style-type: none;
+  margin: 0;
+  text-transform: capitalize;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .navs__item {
+  position: relative;
+}
+
+.header .navs__item:not(:first-child) {
+  margin-left: 20px;
+}
+
+.header .navs__link {
+  display: block;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 13px;
+  color: #767879;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.header .navs__link:hover {
+  margin-top: -6px;
+  color: #ff0000;
+}
+
+.header .icon {
+  margin: 0;
+  list-style-type: none;
+}
+
+.header .icon__item {
+  display: block;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.header .icon__item:hover {
+  margin-top: -6px;
+}
+
+.header .icon__item:not(:first-child) {
+  margin-left: 20px;
+}
+
+.header__img {
+  border-radius: 25px;
+  margin-right: 20px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+.nav__item {
+  margin-left: 50px;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+  color: #767879;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  text-transform: capitalize;
+}
+
+.nav__link:hover {
+  color: #ff0000;
 }
 /*# sourceMappingURL=main.css.map */

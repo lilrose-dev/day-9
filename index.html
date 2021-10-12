@@ -5,11 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Document</title>
+    <title>Bill Gates</title>
 </head>
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <div class="container">
+        <header class="header">
+            <a class="header__link" href="index.html">
+                <img class="header__logo" src="./img/logo.png" alt="header logo" 
+                width="26" 
+                height="26"
+                >
+            </a>
+            <hr class="header__line">
+            <form class="header__form">
+                <label class="visually-hidden" for="search">Searching</label>
+                <input class="header__input" type="search" name="search" placeholder="Search">
+            </form>
+            <hr class="header__line">
+            
+            <ul class="navs header">
+                <li class="navs__item"><a class="navs__link" href="index.html">home</a></li>
+                <li class="navs__item"><a class="navs__link" href="#">profile</a></li>
+                <li class="navs__item"><a class="navs__link" href="#">connections</a></li>
+                <li class="navs__item"><a class="navs__link" href="#">interest</a></li>
+                <li class="navs__item"><a class="navs__link" href="#">try premium</a></li>
+            </ul>
+            <hr class="header__line">
+            <ul class="icon header">
+                <li class="icon__item"><img class="icon__img" src="./img/chat.png" alt="chat" width="26" height="26"></li>
+                <li class="icon__item"><img class="icon__img" src="./img/bell.png" alt="notification bell" width="26" height="26"></li>
+                <li class="icon__item"><img class="icon__img" src="./img/add-user.png" alt="add contact" width="26" height="26"></li>
+            </ul>
+            <hr class="header__line">
+            <img class="header__img" src="./img/avatar.jpg"alt="header image" width="45" height="45">
+        </header>
+    </div><!--End of header container-->
+    <div class="container">
+    <hr class="header__ending-line">
+        <ul class="nav">
+            <li class="nav__item"><a class="nav__link" href="#">post</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">background</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">recommendations</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">following</a></li>
+        </ul>
+    </div><!--End of nav container-->
 </body>
 </html>

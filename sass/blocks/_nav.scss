@@ -1,0 +1,23 @@
+.nav {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+
+    &__item {
+        margin-left: 50px;
+
+    }
+
+    &__link {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 15px;
+        color: #767879;
+        transition: all 0.5s ease;
+        text-transform: capitalize;
+        
+        &:hover {
+            color: #ff0000;
+        }
+    }
+}
