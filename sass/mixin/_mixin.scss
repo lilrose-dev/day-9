@@ -1,0 +1,14 @@
+@mixin font400 {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+@mixin font500 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+
+}

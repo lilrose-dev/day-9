@@ -1,0 +1,239 @@
+.background {
+    max-width: 580px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    margin-bottom: 20px;
+    
+    &__header {
+        max-width: 580px;
+        text-align: left;
+        background-color: #fff;
+        padding: 15px 0 15px 0;
+        margin-bottom: 2px;
+    }
+    
+    &__heading {
+        @include font500;
+        padding-left: 10px;
+        
+    }
+    
+    .main {
+        background-color: #fff;
+        padding: 15px;
+        
+        &__heading {
+            display: flex;
+            @include font500;
+            margin-bottom: 10px;
+            
+            &::before {
+                content: "";
+                display: block;
+                width: 20px;
+                height: 20px;
+                background-image: url(../../img/note.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                margin-right: 10px;
+            }
+            &--experience {
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url(../../img/portfolio-black-symbol.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                    margin-right: 10px;
+                }
+            }
+            
+            &--education {
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url(../../img/university-building.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                    margin-right: 10px;
+                }
+            }
+            
+            &--skill {
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url(../../img/bulb.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                    margin-right: 10px;
+                }
+            }    
+            &--interests {
+                &::before {
+                    content: "";
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    background-image: url(../../img/favourites-filled-star-symbol.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center;
+                    margin-right: 10px;
+                }
+                
+            }
+            
+            &__text {
+                @include font400;
+                margin-bottom: 17px;
+            }
+        }
+        
+        .experience {
+            list-style-type: none;
+            
+            
+            &__item {
+                display: flex;
+                align-items: center ;
+                justify-content: space-between;
+                margin-bottom: 25px;
+            }
+            
+            &__text-wrapper {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            &__text-year {
+                @include font400;
+                color: #808080;
+                margin-bottom: 7px;
+            }
+            
+            &__text {
+                @include font400;
+                margin-bottom: 7px;
+            }
+            
+            &__link {
+                text-decoration: none;
+                color: #46a1ec;
+                
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        
+        .education {
+            list-style-type: none;
+            
+            &__item {
+                margin-bottom: 25px;
+            }
+            
+            &__text--year {
+                @include font400;
+                color: #808080;
+                margin-bottom: 5px;
+            }
+            &__text {
+                @include font400;
+                margin-bottom: 5px;
+            }
+            
+            &__link {
+                text-decoration: none;
+                color: #46a1ec;
+                
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        
+        .skill {
+            list-style-type: none;
+            
+            &__item {
+                display: flex;
+                align-items: center;
+            }
+            
+            &__num {
+                margin: 0;
+                padding: 10px;
+                border: 1px solid grey;
+                border-radius: 50%;
+                background-color: #ffff;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                line-height: 30px;
+                font-size: 17px;
+                margin: 10px;
+            }
+            
+            &__text {
+                margin: 0;
+                text-transform: capitalize;
+                margin-right: 60px;
+            }
+            
+            &__text-2 {
+                margin: 0;
+                text-transform: capitalize;
+                margin-right: 100px;
+            }
+            
+            &__img {
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+            &__num-add{
+                margin: 0;
+                padding: 10px;
+                border: 1px solid grey;
+                border-radius: 50%;
+                background-color: #f1f1f1;
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                line-height: 30px;
+                font-size: 17px;
+            }
+            
+        
+        }
+
+        .interests {
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+
+            &__item {
+                padding: 5px;
+                background-color: #F1F1F1;
+                margin-right: 14px;
+                border-radius: 5px;
+            }
+        }
+
+
+    }///end of main
+}///End of background-->    
+    
+    

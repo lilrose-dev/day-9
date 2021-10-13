@@ -1,0 +1,100 @@
+.center {
+    max-width: 580px;
+    margin-bottom: 15px;
+    margin-left: 17px;
+    margin-right: 17px;
+    
+    &__post {
+        max-width: 580px;
+        display: flex;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #fff;
+        margin-bottom: 2px;
+        
+    }
+
+    &__heading {
+        @include font400;
+        margin-right: 416px;
+        margin-left: 15px;
+    }
+
+    &__btn {
+        margin-right: 5px;
+        border: none;
+        background-color:transparent;
+        transition: all 0.2s ease;
+
+        &:active {
+            background-color: #f1f1f1;
+            border-radius: 25px;
+        }
+    }
+
+    &__next {
+        transform: rotateY(180deg);
+    }
+
+    .list {
+        max-width: 580px;
+        list-style-type: none;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        padding: 15px 0 15px 0;
+        margin-bottom: 20px;
+    
+
+        &__item {
+            text-align: left;
+            max-width: 180px;
+            
+        }
+        
+        &__item:not(:last-child){
+            margin-right: 15px;
+
+        }
+
+        &__img {
+            margin-bottom: 5px;
+        }
+
+        &__heading {
+            max-width: 160px;
+            margin: 0;
+            font-weight: 500;
+            font-size: 14px;
+            margin-bottom: 7px;
+        }
+
+        &__time {
+            text-transform: capitalize;
+            color: #808080;
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+
+    &__line {
+        background-color: #808080;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    &__link {
+        text-decoration: none;
+        @include font500;
+        color:#808080;
+        margin-left: 180px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+
+}
